@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { lucideFilm } from '@ng-icons/lucide';
 
@@ -11,7 +11,7 @@ import { lucideFilm } from '@ng-icons/lucide';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive, NgIconComponent],
+  imports: [RouterLink, RouterLinkActive, NgIconComponent],
   viewProviders: [provideIcons({ lucideFilm })],
   template: `
     <header class="bg-white shadow-sm">

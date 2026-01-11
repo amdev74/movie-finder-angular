@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterLink } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { lucideClapperboard, lucideStar, lucideSearch } from '@ng-icons/lucide';
@@ -11,7 +11,7 @@ import { lucideClapperboard, lucideStar, lucideSearch } from '@ng-icons/lucide';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, NgIconComponent],
+  imports: [RouterLink, NgIconComponent],
   viewProviders: [provideIcons({ lucideClapperboard, lucideStar, lucideSearch })],
   template: `
     <div class="min-h-screen bg-gradient-to-br from-primary-50 to-blue-50">
